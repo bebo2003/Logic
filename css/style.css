@@ -40,17 +40,6 @@ body {
 
 
 
-
-.hp-character {
-    display: inline-block;
-    margin: 3vmin;
-    width: 30vmin;
-    height: 30vmin;
-    aspect-ratio: 1/1;
-    border-radius: 20%;
-    box-shadow: 0 1vmin 4vmin;
-}
-
 .hp-character.griffindor {
     background:
         linear-gradient(69deg, #0000 30%, #da8 0 70%, #0000 0) 27% 20% / 10% 7%,
@@ -153,10 +142,29 @@ body {
     font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: HarryP-MVZ6w;
-    /* تطبيق الخط على عناصر معينة */
+
+@media (max-width: 991px) {
+
+
+
+    .hp-character {
+        display: inline-block;
+        margin: 3vmin;
+        width: 20vmin;
+        height: 20vmin;
+        aspect-ratio: 1/1;
+        border-radius: 20%;
+        box-shadow: 0 1vmin 4vmin;
+    }
+
+    input{
+        font-size: 2rem !important;
+        font-weight: 500 !important;
+
+    }
+    
+    h1{
+        font-size: 7rem;
+    }
+    
 }
