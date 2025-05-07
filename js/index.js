@@ -29,8 +29,8 @@ const renderTasks = () => {
     if (typeof data[j] !== "undefined") {
       let li = document.createElement("li");
       li.innerHTML = data[j].name +
-        " <button class= btn bg-danger style=color:#FFD700;  onclick='toggle(" + j + ")'>Toggle</button> " +
-        " <button class= btn bg-danger  style=color:#A52A2A; onclick='deleteTask(" + j + ")'>Delete</button>";
+        " <button class=btn-fager style=color:#FFD700;  onclick='toggle(" + j + ")'>Toggle</button> " +
+        " <button class=btn-fager  style=color:#A52A2A; onclick='deleteTask(" + j + ")'>Delete</button>";
       if (data[j].done === true) {
         li.style.textDecoration = "line-through";
       }

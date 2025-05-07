@@ -24,7 +24,8 @@ li {
     margin: 10px 0;
     border-radius: 8px;
     color: red;
-    font-size: 16px;
+    font-size: xx-large;
+
     list-style: none;
 }
 
@@ -133,14 +134,25 @@ body {
     box-shadow: 0 1vmin 4vmin;
 }
 
-@font-face {
-    font-family: 'MyCustomFont';
-    /* اسم الخط الذي ستستخدمه */
-    src: url('../HarryP-MVZ6w.ttf') format('HarryP-MVZ6w');
-    /* مسار ملف الخط */
-    font-weight: normal;
-    font-style: normal;
-}
+    .btn-fager {
+        display: inline-block;
+        padding: 14px 28px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        text-decoration: none;
+      }
+      
+      .btn-fager:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(255, 75, 43, 0.4);
+        background: linear-gradient(135deg, #ff4b2b, #ff416c);
+      }
 
 
 @media (max-width: 991px) {
@@ -157,14 +169,14 @@ body {
         box-shadow: 0 1vmin 4vmin;
     }
 
-    input{
+    input {
         font-size: 2rem !important;
         font-weight: 500 !important;
 
     }
-    
-    h1{
+
+    h1 {
         font-size: 7rem;
     }
-    
+
 }
